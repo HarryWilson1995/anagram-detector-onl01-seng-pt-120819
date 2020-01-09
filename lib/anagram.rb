@@ -7,8 +7,8 @@ class Anagram
   end 
   
   def match(array) 
-    array.collect do |anagram|
-      anagram.match
+    array.collect do |potential_anagram|
+      (@word.split("").sort) == (potential_anagramanagram.split("").sort)
   end 
   
   
