@@ -7,7 +7,7 @@ class Anagram
   end 
   
   def match(array) 
-    array.collect do |potential_anagram|
+    array.select do |potential_anagram|
       (@word.split("").sort) == (potential_anagram.split("").sort)
     end 
   end 
